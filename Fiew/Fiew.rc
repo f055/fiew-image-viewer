@@ -1,0 +1,236 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_FIEW                ICON                    "Fiew.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,2
+ PRODUCTVERSION 2,0,0,2
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041504b0"
+        BEGIN
+            VALUE "CompanyName", "www.fapplication.org"
+            VALUE "FileDescription", "Fiew Image Viewer"
+            VALUE "FileVersion", "2, 0, 0, 2"
+            VALUE "InternalName", "Fiew"
+            VALUE "LegalCopyright", "Copyright (C) 2006 Marek Foss"
+            VALUE "OriginalFilename", "Fiew.exe"
+            VALUE "ProductName", "Fiew"
+            VALUE "ProductVersion", "2, 0, 0, 2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x415, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Open...",                     ID_FILE_OPEN
+        MENUITEM "Open Folder...",              ID_FILE_OPENFOLDER
+        MENUITEM "Close",                       ID_FILE_CLOSE, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Extract",                     ID_FILE_EXTRACT, GRAYED
+        MENUITEM "Set as Wallpaper",            ID_FILE_SETASWALLPAPER
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+    POPUP "View"
+    BEGIN
+        MENUITEM "Fullscreen",                  ID_VIEW_FULLSCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "Thumbnails",                  ID_VIEW_THUMBNAILS, GRAYED
+        MENUITEM "List",                        ID_VIEW_LIST, GRAYED
+        MENUITEM SEPARATOR
+        POPUP "Fit to", GRAYED
+        BEGIN
+            MENUITEM "Screen if Oversized",         ID_FITTO_SCREENIFOVERSIZED
+            MENUITEM "Screen",                      ID_FITTO_SCREEN
+            MENUITEM SEPARATOR
+            MENUITEM "Width",                       ID_FITTO_WIDTH
+            MENUITEM "Height",                      ID_FITTO_HEIGHT
+            MENUITEM "Numpad",                      ID_FITTO_NUMPAD
+            MENUITEM SEPARATOR
+            MENUITEM "Left",                        ID_FITTO_LEFT
+            MENUITEM "Right",                       ID_FITTO_RIGHT
+        END
+        POPUP "Zoom", GRAYED
+        BEGIN
+            MENUITEM "100%",                        ID_ZOOM_100
+            MENUITEM "75%",                         ID_ZOOM_75
+            MENUITEM "50%",                         ID_ZOOM_50
+            MENUITEM "25%",                         ID_ZOOM_25
+            MENUITEM SEPARATOR
+            MENUITEM "200%",                        ID_ZOOM_200
+            MENUITEM "300%",                        ID_ZOOM_300
+            MENUITEM "500%",                        ID_ZOOM_500
+            MENUITEM SEPARATOR
+            MENUITEM "Zoom In",                     ID_ZOOM_ZOOMIN
+            MENUITEM "Zoom Out",                    ID_ZOOM_ZOOMOUT
+        END
+        POPUP "Rotate", GRAYED
+        BEGIN
+            MENUITEM "90\t/",                       ID_ROTATE_90
+            MENUITEM "180",                         ID_ROTATE_180
+            MENUITEM "270",                         ID_ROTATE_270
+            MENUITEM SEPARATOR
+            MENUITEM "Reset",                       ID_ROTATE_RESET
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Flow Scroll",                 ID_VIEW_FLOWSCROLL, GRAYED
+    END
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About Fiew...",               ID_HELP_ABOUTFIEW
+        MENUITEM "Manual...",                   ID_HELP_MANUAL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATORS ACCELERATORS 
+BEGIN
+    "C",            ID_FILE_CLOSE,          VIRTKEY, CONTROL, NOINVERT
+    "Q",            ID_FILE_EXIT,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_FILE_EXTRACT,        VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPENFOLDER,     VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "F",            ID_FITTO_HEIGHT,        VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "F",            ID_FITTO_NUMPAD,        VIRTKEY, ALT, NOINVERT
+    "F",            ID_FITTO_WIDTH,         VIRTKEY, CONTROL, NOINVERT
+    VK_OEM_2,       ID_HELP_ABOUTFIEW,      VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_HELP_MANUAL,         VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_VIEW_FLOWSCROLL,     VIRTKEY, CONTROL, NOINVERT
+    "L",            ID_VIEW_LIST,           VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_VIEW_THUMBNAILS,     VIRTKEY, CONTROL, NOINVERT
+    "W",            ID_FILE_SETASWALLPAPER, VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+IDR_MANUAL              PNG                     "ovl_manual.png"
+IDR_ABOUT               PNG                     "ovl_about.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DLL
+//
+
+IDR_DLLRAR              DLL                     "unrar.dll"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDC_FIEW                "FIEW"
+END
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
